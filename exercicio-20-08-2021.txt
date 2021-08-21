@@ -1,0 +1,21 @@
+Exercício 1
+
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        String apelido = "Gomez";
+        int idade = 35;
+        boolean variavel = false;
+        double saldo = 45857.90;
+        String nome = "Julián";
+
+        System.out.println(apelido);
+        System.out.println(idade);
+        System.out.println(variavel);
+        System.out.println(String.format("%.2f",saldo));
+        System.out.println(nome);
+    }
+}
