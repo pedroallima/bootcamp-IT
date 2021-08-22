@@ -1,7 +1,7 @@
 
 import java.util.Random;
 
-public class Exercicio82 {
+public class Exercicio2_4_1 {
     public static void main(String args[]) {
         Formulario[] formularios = new Formulario[50];
         Random random = new Random();

@@ -10,7 +10,7 @@ public class Exercicio2_4 {
         int jornalAC = 0;
         int jornalAB = 0;
         int jornalBC = 0;
-        int outos = 0;
+        int nenhum = 0;
 
         for (int i = 0; i < 50; i++) {
             for (int k = 0; k <= 2; k++) {
@@ -177,5 +177,5 @@ public class Exercicio2_4 {
         System.out.println("Sao assinate dos jornais C        =" + jornalC);
 
 
-    }
 }
+    }
