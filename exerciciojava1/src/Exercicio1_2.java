@@ -1,7 +1,7 @@
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class Exercicio2 {
+public class Exercicio1_2 {
     public static void main(String[] args) {
 /*
 ------------------------

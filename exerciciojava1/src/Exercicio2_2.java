@@ -2,7 +2,7 @@ import java.text.NumberFormat;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class Exercicio6 {
+public class Exercicio2_2 {
     public static void main(String[] args) {
         double aumento = 0;
         Scanner salario = new Scanner(System.in);

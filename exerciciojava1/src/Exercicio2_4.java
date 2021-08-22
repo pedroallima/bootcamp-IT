@@ -1,5 +1,5 @@
 import java.util.Random;
-public class Exercicio8 {
+public class Exercicio2_4 {
     public static void main(String[] args) {
         Random random = new Random();
         int[][] cliente = new int[50][3];

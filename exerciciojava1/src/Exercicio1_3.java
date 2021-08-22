@@ -5,8 +5,8 @@
 
 import java.util.Scanner;
 
-public class Exercicio3 {
-    public Exercicio3() {
+public class Exercicio1_3 {
+    public Exercicio1_3() {
     }
 
     public static void main(String[] var0) {

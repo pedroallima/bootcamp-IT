@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Exercicio7 {
+public class Exercicio2_3 {
     public static void main(String[] args) {
         int[] cliente = new int[7];
         int fatura;

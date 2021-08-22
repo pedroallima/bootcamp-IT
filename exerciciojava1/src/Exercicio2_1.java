@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.text.NumberFormat;
 import java.util.Locale;
-public class Exercicio5 {
+public class Exercicio2_1 {
 
     public static void main(String[] args) {
         double porcentagem = 0;

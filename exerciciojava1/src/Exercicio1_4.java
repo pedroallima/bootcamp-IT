@@ -6,8 +6,8 @@
 import java.text.NumberFormat;
 import java.util.Locale;
 
-public class Exercicio4 {
-    public Exercicio4() {
+public class Exercicio1_4 {
+    public Exercicio1_4() {
     }
 
     public static void main(String[] var0) {
