@@ -20,13 +20,16 @@ public class Poo2_exe_tarde_02 {
 
         System.out.println("( 1 ) Registro de pequeno circuito: menores de 18 anos $ 1300. Acima de 18 anos $ 1.500.");
         System.out.println("( 2 ) Registro de circuito médio: menores de 18 anos $ 2.000. Acima de 18 anos $ 2.300.");
+        System.out.println("( 3 ) Registro de circuito médio: menores de 18 anos $ 2.000. Acima de 18 anos $ 2.300.");
 
 
         do {
 
 
             for (int index = 1; index < documentos.length; index++) {
+
                 formulario.get(0).add(String.valueOf(index));
+
                 Scanner ext_documento = new Scanner(System.in);
                 System.out.format("Digite o  seu %s: ",documentos[index]);
                 String doc_formulario = String.valueOf(ext_documento.next());
