@@ -1,16 +1,19 @@
-class Pessoa {
+package com.meli;
+
+public class PessoaEx3 {
+
     String nome;
     int idade;
     Integer id;
     Double peso;
     Double altura;
-    public Pessoa(){
+    public PessoaEx3(){
 
     }
-    public Pessoa(String nome,int idade,Integer id){
+    public PessoaEx3(String nome,int idade,Integer id){
         this(nome,idade,id,null,null);
     }
-    public Pessoa(String nome, int idade, Integer id, Double peso, Double altura){
+    public PessoaEx3(String nome, int idade, Integer id, Double peso, Double altura){
         this.nome = nome;
         this.idade = idade;
         this.id = id;

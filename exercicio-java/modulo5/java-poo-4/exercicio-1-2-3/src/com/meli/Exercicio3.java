@@ -1,9 +1,11 @@
+package com.meli;
+
 public class Exercicio3 {
     public static void main(String[] args) {
-        Pessoa zezinho = new Pessoa("Zezinho", 25, 1, 70.0, 1.90);
-        Pessoa marcelinho = new Pessoa("Marcelinho", 18, null);
+        PessoaEx3 zezinho = new PessoaEx3("Zezinho", 25, 1, 70.0, 1.90);
+        PessoaEx3 marcelinho = new PessoaEx3("Marcelinho", 18, null);
 
-        System.out.println("Nome: " + zezinho.nome + " Idade: " + zezinho.idade + " ID: " + zezinho.id + " peso: " + zezinho.peso + " altura: " + zezinho.altura);
+        System.out.println("Nome: " + zezinho + " Idade: " + zezinho.idade + " ID: " + zezinho.id + " peso: " + zezinho.peso + " altura: " + zezinho.altura);
         if (zezinho.eMaiorDeIdade()) {
             System.out.println("É maior de idade");
         }else {
