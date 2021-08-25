@@ -1,50 +1,24 @@
 package com.meli;
 
 public class Veiculo {
-    public Veiculo(String marca, double peso, int rodas) {
-    }
-    /* ------------------------------------------------------------------------
-    *1. Criar uma classe de veículo que tenha os seguintes ATRIBUTOS:
-        ● Velocidade ● Aceleracao ● AnguloDeVirada ● Patente ● Peso ● Rodas
-    ------------------------------------------------------------------------- */
-    double Velocidade;
-    double Aceleracao;
-    double AnguloDeVirada;
-    String Marca; //Patente
-    double Peso; // extende
-    int Rodas; // esstende
-    public String Placa; // Placa
-    public String Tipo; // Tipo carro ou Moto
+    public String tipo;
+    public String marca;
+    public String placa;
+    public double velocidade;
+    public double aceleracao;
+    public double anguloDeVirada;
+    public int rodas;
+    public int peso;
 
-    public Veiculo(String marca, double peso, int rodas, String placa) {
-        this.Marca = marca;
-        this.Peso = peso;
-        this.Rodas = rodas;
-        this.Placa = placa;
+    public Veiculo(String marca, String placa, double velocidade, double aceleracao, double anguloDeVirada) {
+        this.marca = marca;
+        this.placa = placa;
+        this.velocidade = velocidade;
+        this.aceleracao = aceleracao;
+        this.anguloDeVirada = anguloDeVirada;
     }
 
-    public Veiculo(double velocidade, double aceleracao, double anguloDeVirada, String marca, double peso, int rodas, String placa) {
-        this.Velocidade = velocidade;
-        this.Aceleracao = aceleracao;
-        this.AnguloDeVirada = anguloDeVirada;
-        this.Marca = marca;
-        this.Peso = peso;
-        this.Rodas = rodas;
-        this.Placa = placa;
-    }
-
-    public Veiculo(String marca, String tipo, double peso, int rodas) {
-        this.Tipo = tipo;
-    }
     /*
-    -----------------------------------------------------------------------
-    * * 3. Se deseja adicionar novas CATEGORIA de Veículos:
-        ● Carros ● Motos.
-       -> Os carros pesam 1.000 Kg e as motos 300 Kg, os carros têm 4 rodas e as motos têm 2.
-    ------------------------------------------------------------------------
-     */
-
-   /*
     Uma corrida também tem um conjunto de veículos que participam da corrida.
     Portanto, agora a corrida terá a responsabilidade de poder adicionar um veículo à corrida, por isso devemos definir os seguintes métodos:
     -> public void adicionarCarro(velocidade, aceleracao, AnguloDeVirada, placa);
@@ -52,17 +26,89 @@ public class Veiculo {
     Ambos os métodos acrescentam um veículo, desde que haja espaço.
     */
 
+
     @Override
     public String toString() {
         return "Veiculo{" +
-                "Velocidade=" + Velocidade +
-                ", Aceleracao=" + Aceleracao +
-                ", AnguloDeVirada=" + AnguloDeVirada +
-                ", Marca='" + Marca + '\'' +
-                ", Peso=" + Peso +
-                ", Rodas='" + Rodas + '\'' +
+                "tipo='" + tipo + '\'' +
+                ", marca='" + marca + '\'' +
+                ", placa='" + placa + '\'' +
+                ", velocidade=" + velocidade +
+                ", aceleracao=" + aceleracao +
+                ", anguloDeVirada=" + anguloDeVirada +
+                ", rodas=" + rodas +
+                ", peso=" + peso +
                 '}';
     }
 
+    public String getTipo() {
+        return tipo;
+    }
 
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String placa) {
+        this.placa = placa;
+    }
+
+    public double getVelocidade() {
+        return velocidade;
+    }
+
+    public void setVelocidade(double velocidade) {
+        this.velocidade = velocidade;
+    }
+
+    public double getAceleracao() {
+        return aceleracao;
+    }
+
+    public void setAceleracao(double aceleracao) {
+        this.aceleracao = aceleracao;
+    }
+
+    public double getAnguloDeVirada() {
+        return anguloDeVirada;
+    }
+
+    public void setAnguloDeVirada(double anguloDeVirada) {
+        this.anguloDeVirada = anguloDeVirada;
+    }
+
+    public int getRodas() {
+        return rodas;
+    }
+
+    public void setRodas(int rodas) {
+        this.rodas = rodas;
+    }
+
+    public int getPeso() {
+        return peso;
+    }
+
+    public void setPeso(int peso) {
+        this.peso = peso;
+    }
 }
+
+
+
+
+
+
+

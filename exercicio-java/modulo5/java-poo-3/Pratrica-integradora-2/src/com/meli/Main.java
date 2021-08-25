@@ -10,12 +10,11 @@ public class Main {
         // Os carros pesam 1.000 Kg
         // Tem 4 rodas
         // Criando carro
-        HashMap<Integer,Veiculo> veiculo = new HashMap<>();
+        HashMap<Integer, Veiculo> veiculo = new HashMap<>();
 
-        veiculo.put(1,new Carro(200,180,90,"Gol","BGQ9800098"));
-        veiculo.put(2,new Carro(200,180,90,"Fiate","BGQ9800098"));
-        veiculo.put(1,new Moto(200,180,90,"Suzuki","BGQ9800098"));
-        veiculo.put(2,new Moto(200,180,90,"yamaha","BGQ9800098"));
+        veiculo.put(1, new Carro("Subaru", "H8PE31", 100, 3.6, 23.7));
+        veiculo.put(2, new Moto("Suzuki", "S23RT1", 125, 4.7, 29.5));
+
 
     }
 }

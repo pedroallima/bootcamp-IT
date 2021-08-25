@@ -1,12 +1,11 @@
 package com.meli;
 
-public class Moto extends Veiculo{
-    private final double peso = 300;
-    private final int rodas = 2;
-
-    public Moto (double velocidade, double aceleracao, double anguloDeVirada, String marca, String placa){
-        super( velocidade, aceleracao, anguloDeVirada, marca, peso, rodas, placa);
+public class Moto extends Veiculo {
+    public Moto(String marca, String placa, double velocidade, double aceleracao, double anguloDeVirada) {
+        super(marca, placa, velocidade, aceleracao, anguloDeVirada);
+        setTipo("Carro");
+        setPeso(300);
+        setRodas(2);
     }
-
-
 }
+
