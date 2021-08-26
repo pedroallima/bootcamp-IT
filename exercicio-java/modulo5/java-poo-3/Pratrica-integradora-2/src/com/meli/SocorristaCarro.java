@@ -1,16 +1,14 @@
 package com.meli;
 
-public class SocorristaCarro {
+public class SocorristaCarro extends Veiculo {
 
-    /*
-        Quando um socorrista se aproximar de um carro, ele irá imprimir “Socorrendo carro” e
-        o número da placa na tela, quando ajudar uma moto, imprimirá “Socorrendo moto” e o
-        número da placa na tela.
-    */
-    public void socorrer(Carro umCarro){
-
+    public SocorristaCarro(double velocidade, double aceleracao, double anguloDeVirada, String placa) {
+        super(velocidade, aceleracao, anguloDeVirada, placa);
     }
 
 
 
+    public void socorrer(Carro umCarro){
+        System.out.println("Socorrendo carro placa " + umCarro);
+    }
 }

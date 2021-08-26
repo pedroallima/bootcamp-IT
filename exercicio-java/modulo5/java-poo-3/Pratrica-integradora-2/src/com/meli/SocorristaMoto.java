@@ -1,9 +1,14 @@
 package com.meli;
 
-public class SocorristaMoto {
+public class SocorristaMoto extends Veiculo {
 
-    // tem que receber um identificador carro
+    public SocorristaMoto(double velocidade, double aceleracao, double anguloDeVirada, String placa) {
+        super(velocidade, aceleracao, anguloDeVirada, placa);
+    }
+
+
+
     public void socorrer(Moto umaMoto){
-
+        System.out.println("Socorrendo Moto placa " + umaMoto);
     }
 }
