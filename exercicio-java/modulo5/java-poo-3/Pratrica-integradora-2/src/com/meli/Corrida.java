@@ -1,5 +1,6 @@
 package com.meli;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -12,10 +13,9 @@ public class Corrida {
     float PremioEmDolares;
     String Nome;
     int QuantidadeDeVeiculosPermitidos;
-    HashMap<Integer, List<Veiculo>> veiculos = new HashMap<>(); // ListaDeVeiculos
+   // HashMap<Integer, List<Veiculo>> veiculos = new HashMap<>(); // ListaDeVeiculos
+   List<Veiculo> veiculos = new ArrayList<>();
 
-    //HashMap<Integer, List<Veiculo>> carridaCarro = new HashMap<>(); // ListaDeVeiculos
-    //HashMap<Integer, List<Veiculo>> carridaMoto = new HashMap<>(); // ListaDeVeiculos
 
 
     public Corrida() {
@@ -30,12 +30,20 @@ public class Corrida {
     Ambos os métodos acrescentam um veículo, desde que haja espaço.
     --------------------------------------------------------------------------------------------*/
    public void adicionarCarro(Veiculo veiculo){
-
-
+       for(int i=0;i< veiculos.size();i++) {
+           if (veiculos.get(i).tipo == "Carro") {
+               // adicionar carro na corrida
+           }
+       }
    }
 
     public void adicionarMoto(Veiculo veiculo){
+        for(int i=0;i < veiculos.size();i++) {
+            if (veiculos.get(i).tipo == "Moto") {
+                // adicionar Moto na corrida
 
+            }
+        }
 
     }
 
@@ -44,11 +52,21 @@ public class Corrida {
     -> public void removerVeiculo(vehículo);
     -> public void removeVeiculoComPlaca(String umaPlaca);
     --------------------------------------- */
-    public void removerVeiculo(int veículo){
+
+    public void removerVeiculo (Veiculo veiculo){
+        for (int i = 0; i < veiculos.size(); i++){
+            if(veiculos.get(i).marca == veiculo.marca){
+                veiculos.remove(veiculo);
+            }
+        }
 
     }
-    public void removeVeiculoComPlaca(String umaPlaca){
-
+    public void removeVeiculoComPlaca(Veiculo umaPlaca){
+        for (int i = 0; i < veiculos.size(); i++){
+            if(veiculos.get(i).placa == umaPlaca.placa){
+                veiculos.remove(umaPlaca);
+            }
+        }
     }
 
 
@@ -57,9 +75,16 @@ public class Corrida {
     O vencedor será aquele que tiver o valor máximo determinado pela seguinte fórmula:
     Velocidade * ½ Aceleração / (AnguloDeVirada*(Peso - NumeroDeRodas * 100).
     -----------------------------------------------------------------*/
-    public void Vencedor( List<Veiculo> corrida){
+    public void Vencedor( Veiculo tipo){
        // Velocidade * ½ Aceleração / (AnguloDeVirada*(Peso - NumeroDeRodas * 100).
-
+        double vencedor = 0;
+        for (int a = 0; a < veiculos.size(); a++) {
+            double resultado = veiculos.get(a).velocidade * (veiculos.get(a).aceleracao) / (veiculos.get(a).anguloDeVirada) * (veiculos.get(a).anguloDeVirada * (veiculos.get(a).peso - veiculos.get(a).rodas * 100));
+            if ((resultado > vencedor) && (veiculos.get(a).tipo == tipo.tipo)){
+                // vencedor = resultadoConta;
+                // vencedor = resultadoConta+"|| "+tipo.placa;
+            }
+        }
 
     }
 
