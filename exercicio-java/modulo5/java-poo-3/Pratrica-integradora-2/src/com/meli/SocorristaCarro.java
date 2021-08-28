@@ -1,14 +1,13 @@
 package com.meli;
 
-public class SocorristaCarro extends Veiculo {
+public class SocorristaCarro {
 
-    public SocorristaCarro(double velocidade, double aceleracao, double anguloDeVirada, String placa) {
-        super(velocidade, aceleracao, anguloDeVirada, placa);
+    public void socorrer(Carro carro){
+        System.out.println("SORRRRRRRRRRRRRRRRENDO CARRO!!!  " + carro.getPlaca());
+
     }
 
-
-
-    public void socorrer(Carro umCarro){
-        System.out.println("Socorrendo carro placa " + umCarro);
-    }
+   // public void socorrer(Carro umCarro){
+    //    System.out.println("Socorrendo carro placa " + umCarro);
+    //}
 }
